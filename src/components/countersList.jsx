@@ -20,20 +20,14 @@ const CountersList = () => {
   };
 
   const handleIncrement = (id) => {
-    // setCounters((el) => el.value + 1);
-    console.log('handleIncrement', id);
-    // setValue((prevState) => prevState+1);
-    // setCounters((el.value) => el.value + 1);
-    // setCounters((el) => el + 1);
+    // console.log('handleIncrement', id);
     const incrementedCounters = counters.slice(0);
     incrementedCounters[id].value++;
     setCounters(incrementedCounters);
   };
 
   const handleDecrement = (id) => {
-    console.log('decrement');
-    // setCounters(counters.values - 1);
-    // setCounters((el) => el.value - 1);
+    // console.log('decrement');
     const decrementedCounters = counters.slice(0);
     decrementedCounters[id].value--;
     setCounters(decrementedCounters);
